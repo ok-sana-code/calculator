@@ -77,7 +77,7 @@ document.querySelector(".buttons").onclick = (event) => {
             sign ='';
             return;
         }
-        a = a / b;
+        a = Math.round((a / b)*10000)/10000;
         break;
     }
     finish = true;

@@ -1,15 +1,13 @@
-body{
- 
+body {
   margin: 40px;
- 
 }
 
-h1{
+h1 {
   font-size: 40px;
   text-align: center;
   margin: 50px;
-  }
-span{
+}
+span {
   color: #ff9501;
 }
 .calc {
@@ -24,36 +22,35 @@ span{
   box-shadow: 4px 4px 4px #4f4f4f;
 }
 
-.calc-screen{
+.calc-screen {
   height: 100px;
   padding: 10px;
   display: grid;
   justify-items: end;
   align-items: end;
-  margin-bottom:5px;
+  margin-bottom: 5px;
 }
 
-.calc-screen p{
+.calc-screen p {
   text-align: right;
   font-size: 4rem;
   margin: 0;
 }
 
-.buttons{
+.buttons {
   display: grid;
-  grid-template-areas: 
-  "ac plus-minus percent division"
-  "seven eight nine multiply"
-  "four five six minus"
-  "one two three plus "
-  "zero zero dot equal";
-  grid-gap:7px;
+  grid-template-areas:
+    "ac plus-minus percent division"
+    "seven eight nine multiply"
+    "four five six minus"
+    "one two three plus "
+    "zero zero dot equal";
+  grid-gap: 7px;
   justify-items: center;
 }
 
-
-.btn{
-  background:#333;
+.btn {
+  background: #333;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -63,24 +60,32 @@ span{
   user-select: none;
 }
 
-.btn:hover{
+.btn:hover {
   filter: brightness(120%);
 }
 
-.btn:active{
+.btn:active {
   filter: brightness(90%);
 }
 
-.btn.bg-grey{
+.btn.bg-grey {
   background: #a6a6a6;
 }
 
-.btn.bg-orange{
+.btn.bg-orange {
   background: #ff9501;
 }
 
-.btn.zero{
+.btn.zero {
   grid-area: zero;
   width: 100%;
   border-radius: 34px;
+}
+
+@media (max-width: 800px) {
+  h1 {
+    font-size: 30px;
+    text-align: center;
+    margin: 10px;
+  }
 }
